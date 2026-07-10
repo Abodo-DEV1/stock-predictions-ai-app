@@ -1,7 +1,6 @@
 {
   "name": "project",
   "devDependencies": {
-    "@cloudflare/vite-plugin": "^1.44.0",
     "vite": "latest"
   },
   "scripts": {
