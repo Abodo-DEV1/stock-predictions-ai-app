@@ -1,4 +1,4 @@
-import { dates } from '/utils/dates'
+import { dates } from './utils/dates'
 
 const tickersArr = []
 const generateReportBtn = document.querySelector('.generate-report-btn')
