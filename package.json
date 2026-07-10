@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "stock-predictions-ai-app",
   "type": "module",
   "devDependencies": {
     "vite": "latest"
@@ -7,9 +7,12 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "npm run build",
+    "build": "vite build",
     "deploy": "npm run build && wrangler deploy",
     "preview": "npm run build && wrangler dev"
+  },
+  "dependencies": {
+    "@cloudflare/vite-plugin": "^1.44.0",
+    "wrangler": "^4.110.0"
   }
-  
 }
