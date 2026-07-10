@@ -1,6 +1,13 @@
-import {defineConfig} from 'vite'
-
+import { defineConfig } from 'vite'
 
 export default defineConfig({
-	plugins: []	
+  build: {
+    target: 'es2020',
+    rollupOptions: {
+      external: ['cloudflare:workers']
+    }
+  },
+  optimizeDeps: {
+    exclude: ['cloudflare:workers']
+  }
 })
