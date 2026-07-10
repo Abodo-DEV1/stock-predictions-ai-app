@@ -1,5 +1,6 @@
 {
   "name": "project",
+  "type": "module",
   "devDependencies": {
     "vite": "latest"
   },
@@ -8,5 +9,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
+  },
+  "dependencies": {
+    "@cloudflare/vite-plugin": "^1.44.0"
   }
 }
