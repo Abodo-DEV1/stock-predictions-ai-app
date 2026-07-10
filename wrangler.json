@@ -1,6 +1,6 @@
 {
   "name": "stock-predictions-ai-app",
-  "main": "src/index.js",
+  "main": "index.js",
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS"
