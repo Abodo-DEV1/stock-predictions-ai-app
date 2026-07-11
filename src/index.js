@@ -1,6 +1,7 @@
-import { dates } from './utils/dates'
+import { dates } from '../utils/dates'
 
 const tickersArr = []
+if (typeof document !== 'undefined') {
 const generateReportBtn = document.querySelector('.generate-report-btn')
 
 generateReportBtn.addEventListener('click', fetchStockData)
@@ -20,7 +21,7 @@ document.getElementById('ticker-input-form').addEventListener('submit', (e) => {
         label.textContent = 'You must add at least one ticker. A ticker is a 3 letter or more code for a stock. E.g TSLA for Tesla.'
     } 
 })
-
+}
 function renderTickers() {
     const tickersDiv = document.querySelector('.ticker-choice-display')
     tickersDiv.innerHTML = ''
@@ -31,9 +32,10 @@ function renderTickers() {
         tickersDiv.appendChild(newTickerSpan)
     })
 }
+if (typeof document !== 'undefined') {
 const loadingArea = document.querySelector('.loading-panel')
 const apiMessage = document.getElementById('api-message')
-
+}
 /* 
   Challenge: Update the `fetch` request
    - Make a request to the Polygon API via your new Worker
